@@ -18,13 +18,6 @@ int main()
     system("g++ std.cpp -o std -O2 -std=c++14");
     system("g++ data.cpp -o data");
 
-    if (system("g++ mine.cpp -o mine -O2 -std=c++14"))
-    {
-        cout << "Compile Error";
-        return 0;
-    }
-    system("g++ std.cpp -o std -O2 -std=c++14");
-
     for (int i = 1; i <= n; i++)
     {
         system("data.exe > in.txt");
@@ -78,3 +71,4 @@ int main()
 
     return 0;
 }
+
